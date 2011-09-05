@@ -77,6 +77,10 @@ Accepts the same arguments as L<Redis::new|Redis>.
 
 =back
 
+=head1 AUTHOR
+
+Sebastian Nowicki <sebnow@gmail.com>
+
 =head1 SEE ALSO
 
 L<ResourcePool|ResourcePool> for detailed documentation and geenral information about
