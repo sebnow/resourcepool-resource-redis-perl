@@ -49,9 +49,11 @@ sub DESTROY {
 
 __END__
 
-=head1 SYNOPSIS
+=head1 NAME
 
-ResourcePool::Resource::Redis provides a ResourcePool wrapper for Redis.
+ResourcePool::Resource::Redis - Provides a ResourcePool wrapper for Redis.
+
+=head1 SYNOPSIS
 
     use ResourcePool::Factory;
     use ResourcePool::Resource::Redis;
