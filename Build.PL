@@ -7,6 +7,9 @@ use Module::Build;
 my $build = new Module::Build(
 	'module_name' => 'ResourcePool::Resource::Redis',
 	'license' => 'mit',
+	'configure_requires' => {
+		'Module::Build' => '>= 0.011',
+	},
 	'build_requires' => {
 		'Test::More' => '',
 		'Test::MockModule' => '',
