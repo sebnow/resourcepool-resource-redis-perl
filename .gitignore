@@ -1,4 +1,7 @@
 /blib
 /_build
 /Build
+/MANIFEST
+/META.yml
+/META.json
 
