@@ -83,7 +83,7 @@ Sebastian Nowicki <sebnow@gmail.com>
 
 =head1 SEE ALSO
 
-L<ResourcePool|ResourcePool> for detailed documentation and geenral information about
+L<ResourcePool|ResourcePool> for detailed documentation and general information about
 what a ResourcePool is.
 
 L<Redis|Redis> for documentation on the Redis interface.
