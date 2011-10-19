@@ -21,8 +21,12 @@ sub new {
 }
 
 sub create_resource {
-	my ($self) = @_;
+	my $self = shift;
 	return ResourcePool::Resource::Redis->new(%{$self->{'args'}});
+}
+
+sub info {
+	return shift->{'args'}->{'server'};
 }
 
 __END__
