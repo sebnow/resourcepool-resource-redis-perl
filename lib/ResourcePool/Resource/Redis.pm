@@ -23,7 +23,8 @@ sub new {
 
 sub close {
 	my ($self) = @_;
-	eval {$self->{'redis'}->quit()};
+	$self->{'redis'}->quit();
+	return;
 }
 
 sub precheck {
