@@ -29,13 +29,8 @@ sub close {
 
 sub precheck {
 	my ($self) = @_;
-	my $rc = uc($self->{'redis'}->ping() || '') eq 'PONG';
-	$rc or $self->close();
-	return $rc;
-}
-
-sub postcheck {
-	return 1;
+	my $pong = eval {$self->{'redis'}->ping()} || '';
+	return uc($pong) eq 'PONG';
 }
 
 sub get_plain_resource {
