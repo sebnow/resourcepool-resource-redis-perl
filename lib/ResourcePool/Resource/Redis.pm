@@ -27,6 +27,11 @@ sub close {
 	return;
 }
 
+sub fail_close {
+	eval {shift->close()};
+	return;
+}
+
 sub precheck {
 	my ($self) = @_;
 	my $pong = eval {$self->{'redis'}->ping()} || '';
